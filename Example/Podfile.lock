@@ -1,0 +1,16 @@
+PODS:
+  - RSNetDiagnosis (0.1.0)
+
+DEPENDENCIES:
+  - RSNetDiagnosis (from `../`)
+
+EXTERNAL SOURCES:
+  RSNetDiagnosis:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RSNetDiagnosis: 03779352d9c00f97a1a609a000e28336a066a553
+
+PODFILE CHECKSUM: 6554112975277dc7d5ceaa359b2741c381741120
+
+COCOAPODS: 1.11.3

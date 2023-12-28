@@ -1,0 +1,1104 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		E47EAFEF2B3C07E500AFAC5A /* Aggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E47EAFF02B3C07E500AFAC5A /* Build configuration list for PBXAggregateTarget "Aggregate" */;
+			buildPhases = (
+				E47EAFF32B3C07EA00AFAC5A /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Aggregate;
+			productName = Aggregate;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		4B9E1D6A5AF0169FD8A892F5 /* Pods_RSNetDiagnosis_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF4D66FA46800B2F88EE940 /* Pods_RSNetDiagnosis_Example.framework */; };
+		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
+		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
+		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
+		6003F59E195388D20070C39A /* RSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* RSAppDelegate.m */; };
+		6003F5A7195388D20070C39A /* RSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* RSViewController.m */; };
+		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
+		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
+		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
+		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		E47EAFC42B3C06D700AFAC5A /* RSNetDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = E47EAF8A2B3C06D600AFAC5A /* RSNetDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E47EAFC52B3C06D700AFAC5A /* RSDomainLookup.h in Headers */ = {isa = PBXBuildFile; fileRef = E47EAF8C2B3C06D600AFAC5A /* RSDomainLookup.h */; };
+		E47EAFC62B3C06D700AFAC5A /* RSDomainLookup.mm in Sources */ = {isa = PBXBuildFile; fileRef = E47EAF8D2B3C06D600AFAC5A /* RSDomainLookup.mm */; };
+		E47EAFC72B3C06D700AFAC5A /* RSNetDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = E47EAF8E2B3C06D600AFAC5A /* RSNetDetector.m */; };
+		E47EAFC82B3C06D700AFAC5A /* RSNetDiagnosisHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E47EAF902B3C06D600AFAC5A /* RSNetDiagnosisHelper.h */; };
+		E47EAFCA2B3C06D700AFAC5A /* RSNetDiagnosisHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E47EAF922B3C06D600AFAC5A /* RSNetDiagnosisHelper.m */; };
+		E47EAFD32B3C06D700AFAC5A /* RSNetInfoUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E47EAFA02B3C06D600AFAC5A /* RSNetInfoUtils.m */; };
+		E47EAFD52B3C06D700AFAC5A /* RSNetInfoUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = E47EAFA22B3C06D600AFAC5A /* RSNetInfoUtils.h */; };
+		E47EAFD62B3C06D700AFAC5A /* RSNetQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E47EAFA42B3C06D600AFAC5A /* RSNetQueue.m */; };
+		E47EAFD72B3C06D700AFAC5A /* RSAsyncTaskQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = E47EAFA52B3C06D600AFAC5A /* RSAsyncTaskQueue.h */; };
+		E47EAFD92B3C06D700AFAC5A /* log4cplus.h in Headers */ = {isa = PBXBuildFile; fileRef = E47EAFA72B3C06D600AFAC5A /* log4cplus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E47EAFDB2B3C06D700AFAC5A /* RSAsyncTaskQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E47EAFA92B3C06D600AFAC5A /* RSAsyncTaskQueue.m */; };
+		E47EAFDC2B3C06D700AFAC5A /* RSNetQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = E47EAFAA2B3C06D600AFAC5A /* RSNetQueue.h */; };
+		E47EAFDF2B3C06D700AFAC5A /* RSPingConclusion.h in Headers */ = {isa = PBXBuildFile; fileRef = E47EAFAF2B3C06D600AFAC5A /* RSPingConclusion.h */; };
+		E47EAFE02B3C06D700AFAC5A /* RSPingResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E47EAFB02B3C06D600AFAC5A /* RSPingResult.m */; };
+		E47EAFE12B3C06D700AFAC5A /* RSPingConclusion.m in Sources */ = {isa = PBXBuildFile; fileRef = E47EAFB12B3C06D600AFAC5A /* RSPingConclusion.m */; };
+		E47EAFE22B3C06D700AFAC5A /* RSPingResult.h in Headers */ = {isa = PBXBuildFile; fileRef = E47EAFB22B3C06D600AFAC5A /* RSPingResult.h */; };
+		E47EAFE32B3C06D700AFAC5A /* RSPing.h in Headers */ = {isa = PBXBuildFile; fileRef = E47EAFB42B3C06D600AFAC5A /* RSPing.h */; };
+		E47EAFE42B3C06D700AFAC5A /* RSPingService.h in Headers */ = {isa = PBXBuildFile; fileRef = E47EAFB52B3C06D600AFAC5A /* RSPingService.h */; };
+		E47EAFE52B3C06D700AFAC5A /* RSPing.mm in Sources */ = {isa = PBXBuildFile; fileRef = E47EAFB62B3C06D600AFAC5A /* RSPing.mm */; };
+		E47EAFE62B3C06D700AFAC5A /* RSPingService.mm in Sources */ = {isa = PBXBuildFile; fileRef = E47EAFB72B3C06D600AFAC5A /* RSPingService.mm */; };
+		E47EAFE72B3C06D700AFAC5A /* RSTCPPing.m in Sources */ = {isa = PBXBuildFile; fileRef = E47EAFB92B3C06D600AFAC5A /* RSTCPPing.m */; };
+		E47EAFE82B3C06D700AFAC5A /* RSTCPPing.h in Headers */ = {isa = PBXBuildFile; fileRef = E47EAFBA2B3C06D600AFAC5A /* RSTCPPing.h */; };
+		E47EAFE92B3C06D700AFAC5A /* RSTraceRouteResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E47EAFBD2B3C06D700AFAC5A /* RSTraceRouteResult.m */; };
+		E47EAFEA2B3C06D700AFAC5A /* RSTraceRouteResult.h in Headers */ = {isa = PBXBuildFile; fileRef = E47EAFBE2B3C06D700AFAC5A /* RSTraceRouteResult.h */; };
+		E47EAFEB2B3C06D700AFAC5A /* RSTraceRouteService.m in Sources */ = {isa = PBXBuildFile; fileRef = E47EAFC02B3C06D700AFAC5A /* RSTraceRouteService.m */; };
+		E47EAFEC2B3C06D700AFAC5A /* RSICMPTraceRoute.mm in Sources */ = {isa = PBXBuildFile; fileRef = E47EAFC12B3C06D700AFAC5A /* RSICMPTraceRoute.mm */; };
+		E47EAFED2B3C06D700AFAC5A /* RSTraceRouteService.h in Headers */ = {isa = PBXBuildFile; fileRef = E47EAFC22B3C06D700AFAC5A /* RSTraceRouteService.h */; };
+		E47EAFEE2B3C06D700AFAC5A /* RSICMPTraceRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = E47EAFC32B3C06D700AFAC5A /* RSICMPTraceRoute.h */; };
+		E47EAFF62B3C37AE00AFAC5A /* RSNetDiagnosisLog.mm in Sources */ = {isa = PBXBuildFile; fileRef = E47EAFF42B3C37AE00AFAC5A /* RSNetDiagnosisLog.mm */; };
+		E47EAFF72B3C37AE00AFAC5A /* RSNetDiagnosisLog.h in Headers */ = {isa = PBXBuildFile; fileRef = E47EAFF52B3C37AE00AFAC5A /* RSNetDiagnosisLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E47EAFFE2B3D6CBC00AFAC5A /* RSNetReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = E47EAFFC2B3D6CBC00AFAC5A /* RSNetReachability.h */; };
+		E47EAFFF2B3D6CBC00AFAC5A /* RSNetReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E47EAFFD2B3D6CBC00AFAC5A /* RSNetReachability.m */; };
+		E914A80EB722CCC3734E1F28 /* Pods_RSNetDiagnosis_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30EB76FB3DF72782DCB655A /* Pods_RSNetDiagnosis_Tests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6003F589195388D20070C39A;
+			remoteInfo = RSNetDiagnosis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E47EAF792B3C044400AFAC5A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1CD20D713ED0AA955130FD75 /* RSNetDiagnosis.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RSNetDiagnosis.podspec; path = ../RSNetDiagnosis.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		36A336F57014C7551BAF3D89 /* Pods-RSNetDiagnosis_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSNetDiagnosis_Example.debug.xcconfig"; path = "Target Support Files/Pods-RSNetDiagnosis_Example/Pods-RSNetDiagnosis_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3818DCBD875B3BC6AFF5AC54 /* Pods-RSNetDiagnosis_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSNetDiagnosis_Example.release.xcconfig"; path = "Target Support Files/Pods-RSNetDiagnosis_Example/Pods-RSNetDiagnosis_Example.release.xcconfig"; sourceTree = "<group>"; };
+		6003F58A195388D20070C39A /* RSNetDiagnosis_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSNetDiagnosis_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6003F595195388D20070C39A /* RSNetDiagnosis-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RSNetDiagnosis-Info.plist"; sourceTree = "<group>"; };
+		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6003F59B195388D20070C39A /* RSNetDiagnosis-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSNetDiagnosis-Prefix.pch"; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* RSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSAppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* RSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSAppDelegate.m; sourceTree = "<group>"; };
+		6003F5A5195388D20070C39A /* RSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSViewController.h; sourceTree = "<group>"; };
+		6003F5A6195388D20070C39A /* RSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSViewController.m; sourceTree = "<group>"; };
+		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6003F5AE195388D20070C39A /* RSNetDiagnosis_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSNetDiagnosis_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		6AC7E261DCBF4161BDBA3360 /* Pods-RSNetDiagnosis_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSNetDiagnosis_Tests.debug.xcconfig"; path = "Target Support Files/Pods-RSNetDiagnosis_Tests/Pods-RSNetDiagnosis_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8302D2AC22FAA698A8CB46A7 /* Pods-RSNetDiagnosis_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSNetDiagnosis_Tests.release.xcconfig"; path = "Target Support Files/Pods-RSNetDiagnosis_Tests/Pods-RSNetDiagnosis_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A30EB76FB3DF72782DCB655A /* Pods_RSNetDiagnosis_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSNetDiagnosis_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCC5654C553C55D2F99F3B9B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CFF4D66FA46800B2F88EE940 /* Pods_RSNetDiagnosis_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSNetDiagnosis_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5A1B9AED3C6CEAF2AF3FB36 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E47EAF832B3C06B300AFAC5A /* RSNetDiagnosis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSNetDiagnosis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E47EAF8A2B3C06D600AFAC5A /* RSNetDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSNetDetector.h; path = ../../RSNetDiagnosis/Classes/RSNetDetector.h; sourceTree = "<group>"; };
+		E47EAF8C2B3C06D600AFAC5A /* RSDomainLookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDomainLookup.h; sourceTree = "<group>"; };
+		E47EAF8D2B3C06D600AFAC5A /* RSDomainLookup.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RSDomainLookup.mm; sourceTree = "<group>"; };
+		E47EAF8E2B3C06D600AFAC5A /* RSNetDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSNetDetector.m; path = ../../RSNetDiagnosis/Classes/RSNetDetector.m; sourceTree = "<group>"; };
+		E47EAF902B3C06D600AFAC5A /* RSNetDiagnosisHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSNetDiagnosisHelper.h; sourceTree = "<group>"; };
+		E47EAF922B3C06D600AFAC5A /* RSNetDiagnosisHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSNetDiagnosisHelper.m; sourceTree = "<group>"; };
+		E47EAFA02B3C06D600AFAC5A /* RSNetInfoUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSNetInfoUtils.m; sourceTree = "<group>"; };
+		E47EAFA22B3C06D600AFAC5A /* RSNetInfoUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSNetInfoUtils.h; sourceTree = "<group>"; };
+		E47EAFA42B3C06D600AFAC5A /* RSNetQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSNetQueue.m; sourceTree = "<group>"; };
+		E47EAFA52B3C06D600AFAC5A /* RSAsyncTaskQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAsyncTaskQueue.h; sourceTree = "<group>"; };
+		E47EAFA72B3C06D600AFAC5A /* log4cplus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log4cplus.h; sourceTree = "<group>"; };
+		E47EAFA92B3C06D600AFAC5A /* RSAsyncTaskQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAsyncTaskQueue.m; sourceTree = "<group>"; };
+		E47EAFAA2B3C06D600AFAC5A /* RSNetQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSNetQueue.h; sourceTree = "<group>"; };
+		E47EAFAF2B3C06D600AFAC5A /* RSPingConclusion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSPingConclusion.h; sourceTree = "<group>"; };
+		E47EAFB02B3C06D600AFAC5A /* RSPingResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSPingResult.m; sourceTree = "<group>"; };
+		E47EAFB12B3C06D600AFAC5A /* RSPingConclusion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSPingConclusion.m; sourceTree = "<group>"; };
+		E47EAFB22B3C06D600AFAC5A /* RSPingResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSPingResult.h; sourceTree = "<group>"; };
+		E47EAFB42B3C06D600AFAC5A /* RSPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSPing.h; sourceTree = "<group>"; };
+		E47EAFB52B3C06D600AFAC5A /* RSPingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSPingService.h; sourceTree = "<group>"; };
+		E47EAFB62B3C06D600AFAC5A /* RSPing.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RSPing.mm; sourceTree = "<group>"; };
+		E47EAFB72B3C06D600AFAC5A /* RSPingService.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RSPingService.mm; sourceTree = "<group>"; };
+		E47EAFB92B3C06D600AFAC5A /* RSTCPPing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSTCPPing.m; sourceTree = "<group>"; };
+		E47EAFBA2B3C06D600AFAC5A /* RSTCPPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSTCPPing.h; sourceTree = "<group>"; };
+		E47EAFBD2B3C06D700AFAC5A /* RSTraceRouteResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSTraceRouteResult.m; sourceTree = "<group>"; };
+		E47EAFBE2B3C06D700AFAC5A /* RSTraceRouteResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSTraceRouteResult.h; sourceTree = "<group>"; };
+		E47EAFC02B3C06D700AFAC5A /* RSTraceRouteService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSTraceRouteService.m; sourceTree = "<group>"; };
+		E47EAFC12B3C06D700AFAC5A /* RSICMPTraceRoute.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RSICMPTraceRoute.mm; sourceTree = "<group>"; };
+		E47EAFC22B3C06D700AFAC5A /* RSTraceRouteService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSTraceRouteService.h; sourceTree = "<group>"; };
+		E47EAFC32B3C06D700AFAC5A /* RSICMPTraceRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSICMPTraceRoute.h; sourceTree = "<group>"; };
+		E47EAFF42B3C37AE00AFAC5A /* RSNetDiagnosisLog.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RSNetDiagnosisLog.mm; sourceTree = "<group>"; };
+		E47EAFF52B3C37AE00AFAC5A /* RSNetDiagnosisLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSNetDiagnosisLog.h; sourceTree = "<group>"; };
+		E47EAFFC2B3D6CBC00AFAC5A /* RSNetReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSNetReachability.h; sourceTree = "<group>"; };
+		E47EAFFD2B3D6CBC00AFAC5A /* RSNetReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSNetReachability.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6003F587195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
+				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
+				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				4B9E1D6A5AF0169FD8A892F5 /* Pods_RSNetDiagnosis_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AB195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
+				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
+				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
+				E914A80EB722CCC3734E1F28 /* Pods_RSNetDiagnosis_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E47EAF802B3C06B300AFAC5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6003F581195388D10070C39A = {
+			isa = PBXGroup;
+			children = (
+				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
+				6003F593195388D20070C39A /* Example for RSNetDiagnosis */,
+				6003F5B5195388D20070C39A /* Tests */,
+				E47EAF842B3C06B300AFAC5A /* RSNetDiagnosis */,
+				6003F58C195388D20070C39A /* Frameworks */,
+				6003F58B195388D20070C39A /* Products */,
+				A517215071D6E7E07190E647 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6003F58B195388D20070C39A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58A195388D20070C39A /* RSNetDiagnosis_Example.app */,
+				6003F5AE195388D20070C39A /* RSNetDiagnosis_Tests.xctest */,
+				E47EAF832B3C06B300AFAC5A /* RSNetDiagnosis.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6003F58C195388D20070C39A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58D195388D20070C39A /* Foundation.framework */,
+				6003F58F195388D20070C39A /* CoreGraphics.framework */,
+				6003F591195388D20070C39A /* UIKit.framework */,
+				6003F5AF195388D20070C39A /* XCTest.framework */,
+				CFF4D66FA46800B2F88EE940 /* Pods_RSNetDiagnosis_Example.framework */,
+				A30EB76FB3DF72782DCB655A /* Pods_RSNetDiagnosis_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6003F593195388D20070C39A /* Example for RSNetDiagnosis */ = {
+			isa = PBXGroup;
+			children = (
+				6003F59C195388D20070C39A /* RSAppDelegate.h */,
+				6003F59D195388D20070C39A /* RSAppDelegate.m */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				6003F5A5195388D20070C39A /* RSViewController.h */,
+				6003F5A6195388D20070C39A /* RSViewController.m */,
+				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				6003F594195388D20070C39A /* Supporting Files */,
+			);
+			name = "Example for RSNetDiagnosis";
+			path = RSNetDiagnosis;
+			sourceTree = "<group>";
+		};
+		6003F594195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F595195388D20070C39A /* RSNetDiagnosis-Info.plist */,
+				6003F596195388D20070C39A /* InfoPlist.strings */,
+				6003F599195388D20070C39A /* main.m */,
+				6003F59B195388D20070C39A /* RSNetDiagnosis-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6003F5B5195388D20070C39A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5BB195388D20070C39A /* Tests.m */,
+				6003F5B6195388D20070C39A /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6003F5B6195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5B7195388D20070C39A /* Tests-Info.plist */,
+				6003F5B8195388D20070C39A /* InfoPlist.strings */,
+				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				1CD20D713ED0AA955130FD75 /* RSNetDiagnosis.podspec */,
+				D5A1B9AED3C6CEAF2AF3FB36 /* README.md */,
+				CCC5654C553C55D2F99F3B9B /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		A517215071D6E7E07190E647 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36A336F57014C7551BAF3D89 /* Pods-RSNetDiagnosis_Example.debug.xcconfig */,
+				3818DCBD875B3BC6AFF5AC54 /* Pods-RSNetDiagnosis_Example.release.xcconfig */,
+				6AC7E261DCBF4161BDBA3360 /* Pods-RSNetDiagnosis_Tests.debug.xcconfig */,
+				8302D2AC22FAA698A8CB46A7 /* Pods-RSNetDiagnosis_Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E47EAF842B3C06B300AFAC5A /* RSNetDiagnosis */ = {
+			isa = PBXGroup;
+			children = (
+				E47EAF8A2B3C06D600AFAC5A /* RSNetDetector.h */,
+				E47EAF8E2B3C06D600AFAC5A /* RSNetDetector.m */,
+				E47EAF8F2B3C06D600AFAC5A /* common */,
+				E47EAF8B2B3C06D600AFAC5A /* lookup */,
+				E47EAFA32B3C06D600AFAC5A /* tools */,
+				E47EAFAD2B3C06D600AFAC5A /* ping */,
+				E47EAFBB2B3C06D700AFAC5A /* traceroute */,
+				E47EAFB82B3C06D600AFAC5A /* tcpping */,
+			);
+			path = RSNetDiagnosis;
+			sourceTree = "<group>";
+		};
+		E47EAF8B2B3C06D600AFAC5A /* lookup */ = {
+			isa = PBXGroup;
+			children = (
+				E47EAF8C2B3C06D600AFAC5A /* RSDomainLookup.h */,
+				E47EAF8D2B3C06D600AFAC5A /* RSDomainLookup.mm */,
+			);
+			name = lookup;
+			path = ../../RSNetDiagnosis/Classes/lookup;
+			sourceTree = "<group>";
+		};
+		E47EAF8F2B3C06D600AFAC5A /* common */ = {
+			isa = PBXGroup;
+			children = (
+				E47EAF902B3C06D600AFAC5A /* RSNetDiagnosisHelper.h */,
+				E47EAF922B3C06D600AFAC5A /* RSNetDiagnosisHelper.m */,
+			);
+			name = common;
+			path = ../../RSNetDiagnosis/Classes/common;
+			sourceTree = "<group>";
+		};
+		E47EAF9E2B3C06D600AFAC5A /* netInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E47EAFA22B3C06D600AFAC5A /* RSNetInfoUtils.h */,
+				E47EAFA02B3C06D600AFAC5A /* RSNetInfoUtils.m */,
+				E47EAFFC2B3D6CBC00AFAC5A /* RSNetReachability.h */,
+				E47EAFFD2B3D6CBC00AFAC5A /* RSNetReachability.m */,
+			);
+			path = netInfo;
+			sourceTree = "<group>";
+		};
+		E47EAFA32B3C06D600AFAC5A /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				E47EAF9E2B3C06D600AFAC5A /* netInfo */,
+				E47EAFA52B3C06D600AFAC5A /* RSAsyncTaskQueue.h */,
+				E47EAFA92B3C06D600AFAC5A /* RSAsyncTaskQueue.m */,
+				E47EAFAA2B3C06D600AFAC5A /* RSNetQueue.h */,
+				E47EAFA42B3C06D600AFAC5A /* RSNetQueue.m */,
+				E47EAFF52B3C37AE00AFAC5A /* RSNetDiagnosisLog.h */,
+				E47EAFF42B3C37AE00AFAC5A /* RSNetDiagnosisLog.mm */,
+				E47EAFA72B3C06D600AFAC5A /* log4cplus.h */,
+			);
+			name = tools;
+			path = ../../RSNetDiagnosis/Classes/tools;
+			sourceTree = "<group>";
+		};
+		E47EAFAD2B3C06D600AFAC5A /* ping */ = {
+			isa = PBXGroup;
+			children = (
+				E47EAFB32B3C06D600AFAC5A /* control */,
+				E47EAFAE2B3C06D600AFAC5A /* model */,
+			);
+			name = ping;
+			path = ../../RSNetDiagnosis/Classes/ping;
+			sourceTree = "<group>";
+		};
+		E47EAFAE2B3C06D600AFAC5A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E47EAFB22B3C06D600AFAC5A /* RSPingResult.h */,
+				E47EAFB02B3C06D600AFAC5A /* RSPingResult.m */,
+				E47EAFAF2B3C06D600AFAC5A /* RSPingConclusion.h */,
+				E47EAFB12B3C06D600AFAC5A /* RSPingConclusion.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E47EAFB32B3C06D600AFAC5A /* control */ = {
+			isa = PBXGroup;
+			children = (
+				E47EAFB52B3C06D600AFAC5A /* RSPingService.h */,
+				E47EAFB72B3C06D600AFAC5A /* RSPingService.mm */,
+				E47EAFB42B3C06D600AFAC5A /* RSPing.h */,
+				E47EAFB62B3C06D600AFAC5A /* RSPing.mm */,
+			);
+			path = control;
+			sourceTree = "<group>";
+		};
+		E47EAFB82B3C06D600AFAC5A /* tcpping */ = {
+			isa = PBXGroup;
+			children = (
+				E47EAFBA2B3C06D600AFAC5A /* RSTCPPing.h */,
+				E47EAFB92B3C06D600AFAC5A /* RSTCPPing.m */,
+			);
+			name = tcpping;
+			path = ../../RSNetDiagnosis/Classes/tcpping;
+			sourceTree = "<group>";
+		};
+		E47EAFBB2B3C06D700AFAC5A /* traceroute */ = {
+			isa = PBXGroup;
+			children = (
+				E47EAFBF2B3C06D700AFAC5A /* control */,
+				E47EAFBC2B3C06D700AFAC5A /* model */,
+			);
+			name = traceroute;
+			path = ../../RSNetDiagnosis/Classes/traceroute;
+			sourceTree = "<group>";
+		};
+		E47EAFBC2B3C06D700AFAC5A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E47EAFBE2B3C06D700AFAC5A /* RSTraceRouteResult.h */,
+				E47EAFBD2B3C06D700AFAC5A /* RSTraceRouteResult.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E47EAFBF2B3C06D700AFAC5A /* control */ = {
+			isa = PBXGroup;
+			children = (
+				E47EAFC22B3C06D700AFAC5A /* RSTraceRouteService.h */,
+				E47EAFC02B3C06D700AFAC5A /* RSTraceRouteService.m */,
+				E47EAFC32B3C06D700AFAC5A /* RSICMPTraceRoute.h */,
+				E47EAFC12B3C06D700AFAC5A /* RSICMPTraceRoute.mm */,
+			);
+			path = control;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E47EAF7E2B3C06B300AFAC5A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47EAFC42B3C06D700AFAC5A /* RSNetDetector.h in Headers */,
+				E47EAFF72B3C37AE00AFAC5A /* RSNetDiagnosisLog.h in Headers */,
+				E47EAFD92B3C06D700AFAC5A /* log4cplus.h in Headers */,
+				E47EAFDC2B3C06D700AFAC5A /* RSNetQueue.h in Headers */,
+				E47EAFE32B3C06D700AFAC5A /* RSPing.h in Headers */,
+				E47EAFEE2B3C06D700AFAC5A /* RSICMPTraceRoute.h in Headers */,
+				E47EAFFE2B3D6CBC00AFAC5A /* RSNetReachability.h in Headers */,
+				E47EAFE22B3C06D700AFAC5A /* RSPingResult.h in Headers */,
+				E47EAFD72B3C06D700AFAC5A /* RSAsyncTaskQueue.h in Headers */,
+				E47EAFEA2B3C06D700AFAC5A /* RSTraceRouteResult.h in Headers */,
+				E47EAFDF2B3C06D700AFAC5A /* RSPingConclusion.h in Headers */,
+				E47EAFED2B3C06D700AFAC5A /* RSTraceRouteService.h in Headers */,
+				E47EAFC82B3C06D700AFAC5A /* RSNetDiagnosisHelper.h in Headers */,
+				E47EAFC52B3C06D700AFAC5A /* RSDomainLookup.h in Headers */,
+				E47EAFD52B3C06D700AFAC5A /* RSNetInfoUtils.h in Headers */,
+				E47EAFE42B3C06D700AFAC5A /* RSPingService.h in Headers */,
+				E47EAFE82B3C06D700AFAC5A /* RSTCPPing.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6003F589195388D20070C39A /* RSNetDiagnosis_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "RSNetDiagnosis_Example" */;
+			buildPhases = (
+				47C9CC70C84DF84C6D88B127 /* [CP] Check Pods Manifest.lock */,
+				6003F586195388D20070C39A /* Sources */,
+				6003F587195388D20070C39A /* Frameworks */,
+				6003F588195388D20070C39A /* Resources */,
+				E47EAF792B3C044400AFAC5A /* Embed Frameworks */,
+				FD6FC8E7729002EF685A3916 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSNetDiagnosis_Example;
+			productName = RSNetDiagnosis;
+			productReference = 6003F58A195388D20070C39A /* RSNetDiagnosis_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6003F5AD195388D20070C39A /* RSNetDiagnosis_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "RSNetDiagnosis_Tests" */;
+			buildPhases = (
+				4D01EC043EC050BF7A752F22 /* [CP] Check Pods Manifest.lock */,
+				6003F5AA195388D20070C39A /* Sources */,
+				6003F5AB195388D20070C39A /* Frameworks */,
+				6003F5AC195388D20070C39A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6003F5B4195388D20070C39A /* PBXTargetDependency */,
+			);
+			name = RSNetDiagnosis_Tests;
+			productName = RSNetDiagnosisTests;
+			productReference = 6003F5AE195388D20070C39A /* RSNetDiagnosis_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E47EAF822B3C06B300AFAC5A /* RSNetDiagnosis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E47EAF872B3C06B300AFAC5A /* Build configuration list for PBXNativeTarget "RSNetDiagnosis" */;
+			buildPhases = (
+				E47EAF7E2B3C06B300AFAC5A /* Headers */,
+				E47EAF7F2B3C06B300AFAC5A /* Sources */,
+				E47EAF802B3C06B300AFAC5A /* Frameworks */,
+				E47EAF812B3C06B300AFAC5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSNetDiagnosis;
+			productName = RSNetDiagnosis;
+			productReference = E47EAF832B3C06B300AFAC5A /* RSNetDiagnosis.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6003F582195388D10070C39A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RS;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Ron-Samkulami";
+				TargetAttributes = {
+					6003F5AD195388D20070C39A = {
+						TestTargetID = 6003F589195388D20070C39A;
+					};
+					E47EAF822B3C06B300AFAC5A = {
+						CreatedOnToolsVersion = 15.0;
+						DevelopmentTeam = VB27T8S5Y8;
+						ProvisioningStyle = Automatic;
+					};
+					E47EAFEF2B3C07E500AFAC5A = {
+						CreatedOnToolsVersion = 15.0;
+						DevelopmentTeam = VB27T8S5Y8;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "RSNetDiagnosis" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 6003F581195388D10070C39A;
+			productRefGroup = 6003F58B195388D20070C39A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6003F589195388D20070C39A /* RSNetDiagnosis_Example */,
+				6003F5AD195388D20070C39A /* RSNetDiagnosis_Tests */,
+				E47EAF822B3C06B300AFAC5A /* RSNetDiagnosis */,
+				E47EAFEF2B3C07E500AFAC5A /* Aggregate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6003F588195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AC195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E47EAF812B3C06B300AFAC5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47C9CC70C84DF84C6D88B127 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RSNetDiagnosis_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D01EC043EC050BF7A752F22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RSNetDiagnosis_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E47EAFF32B3C07EA00AFAC5A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n#!/bin/sh\n#要build的target名,需要替换成自己项目的名称\nTARGET_NAME=${PROJECT_NAME}\n#${PROJECT_NAME}\nif [[ $1 ]]\nthen\nTARGET_NAME=$1\nfi\nUNIVERSAL_OUTPUT_FOLDER=\"${SRCROOT}/../${TARGET_NAME}/Library/\"\n\n#创建输出目录，并删除之前的framework文件\nmkdir -p \"${UNIVERSAL_OUTPUT_FOLDER}\"\nrm -rf \"${UNIVERSAL_OUTPUT_FOLDER}/${TARGET_NAME}.framework\"\n\n#分别编译模拟器和真机的Framework\nxcodebuild -target \"${TARGET_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${TARGET_NAME}\" ONLY_ACTIVE_ARCH=NO VALID_ARCHS=\"x86_64\" -configuration ${CONFIGURATION} -sdk iphonesimulator BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n#拷贝framework到univer目录\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${TARGET_NAME}.framework\" \"${UNIVERSAL_OUTPUT_FOLDER}\"\n\n#合并framework，输出最终的framework到build目录\nlipo -create -output \"${UNIVERSAL_OUTPUT_FOLDER}/${TARGET_NAME}.framework/${TARGET_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${TARGET_NAME}.framework/${TARGET_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${TARGET_NAME}.framework/${TARGET_NAME}\"\n\n#删除编译之后生成的无关的配置文件\ndir_path=\"${UNIVERSAL_OUTPUT_FOLDER}/${TARGET_NAME}.framework/\"\nfor file in ls $dir_path\ndo\nif [[ ${file} =~ \".xcconfig\" ]]\nthen\nrm -f \"${dir_path}/${file}\"\nfi\ndone\n\n#判断build文件夹是否存在，存在则删除\nif [ -d \"${SRCROOT}/build\" ]\nthen\nrm -rf \"${SRCROOT}/build\"\nfi\n\nrm -rf \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos\"\n\n#打开合并后的文件夹\nopen \"${UNIVERSAL_OUTPUT_FOLDER}\"\n";
+		};
+		FD6FC8E7729002EF685A3916 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RSNetDiagnosis_Example/Pods-RSNetDiagnosis_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RSNetDiagnosis/RSNetDiagnosis.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSNetDiagnosis.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RSNetDiagnosis_Example/Pods-RSNetDiagnosis_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6003F586195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F59E195388D20070C39A /* RSAppDelegate.m in Sources */,
+				6003F5A7195388D20070C39A /* RSViewController.m in Sources */,
+				6003F59A195388D20070C39A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AA195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E47EAF7F2B3C06B300AFAC5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47EAFCA2B3C06D700AFAC5A /* RSNetDiagnosisHelper.m in Sources */,
+				E47EAFF62B3C37AE00AFAC5A /* RSNetDiagnosisLog.mm in Sources */,
+				E47EAFC72B3C06D700AFAC5A /* RSNetDetector.m in Sources */,
+				E47EAFE52B3C06D700AFAC5A /* RSPing.mm in Sources */,
+				E47EAFE62B3C06D700AFAC5A /* RSPingService.mm in Sources */,
+				E47EAFFF2B3D6CBC00AFAC5A /* RSNetReachability.m in Sources */,
+				E47EAFC62B3C06D700AFAC5A /* RSDomainLookup.mm in Sources */,
+				E47EAFEB2B3C06D700AFAC5A /* RSTraceRouteService.m in Sources */,
+				E47EAFE72B3C06D700AFAC5A /* RSTCPPing.m in Sources */,
+				E47EAFE12B3C06D700AFAC5A /* RSPingConclusion.m in Sources */,
+				E47EAFE92B3C06D700AFAC5A /* RSTraceRouteResult.m in Sources */,
+				E47EAFD62B3C06D700AFAC5A /* RSNetQueue.m in Sources */,
+				E47EAFD32B3C06D700AFAC5A /* RSNetInfoUtils.m in Sources */,
+				E47EAFE02B3C06D700AFAC5A /* RSPingResult.m in Sources */,
+				E47EAFEC2B3C06D700AFAC5A /* RSICMPTraceRoute.mm in Sources */,
+				E47EAFDB2B3C06D700AFAC5A /* RSAsyncTaskQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6003F589195388D20070C39A /* RSNetDiagnosis_Example */;
+			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6003F596195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F597195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F5B9195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71719F9E1E33DC2100824A3D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6003F5BD195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6003F5BE195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6003F5C0195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36A336F57014C7551BAF3D89 /* Pods-RSNetDiagnosis_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RSNetDiagnosis/RSNetDiagnosis-Prefix.pch";
+				INFOPLIST_FILE = "RSNetDiagnosis/RSNetDiagnosis-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6003F5C1195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3818DCBD875B3BC6AFF5AC54 /* Pods-RSNetDiagnosis_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RSNetDiagnosis/RSNetDiagnosis-Prefix.pch";
+				INFOPLIST_FILE = "RSNetDiagnosis/RSNetDiagnosis-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6003F5C3195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AC7E261DCBF4161BDBA3360 /* Pods-RSNetDiagnosis_Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSNetDiagnosis_Example.app/RSNetDiagnosis_Example";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6003F5C4195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8302D2AC22FAA698A8CB46A7 /* Pods-RSNetDiagnosis_Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSNetDiagnosis_Example.app/RSNetDiagnosis_Example";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		E47EAF882B3C06B300AFAC5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VB27T8S5Y8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Ron-Samkulami. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxsdk.37hw.ios.RSNetDiagnosis;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E47EAF892B3C06B300AFAC5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VB27T8S5Y8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Ron-Samkulami. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxsdk.37hw.ios.RSNetDiagnosis;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E47EAFF12B3C07E500AFAC5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VB27T8S5Y8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E47EAFF22B3C07E500AFAC5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VB27T8S5Y8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "RSNetDiagnosis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5BD195388D20070C39A /* Debug */,
+				6003F5BE195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "RSNetDiagnosis_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C0195388D20070C39A /* Debug */,
+				6003F5C1195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "RSNetDiagnosis_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C3195388D20070C39A /* Debug */,
+				6003F5C4195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E47EAF872B3C06B300AFAC5A /* Build configuration list for PBXNativeTarget "RSNetDiagnosis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E47EAF882B3C06B300AFAC5A /* Debug */,
+				E47EAF892B3C06B300AFAC5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E47EAFF02B3C07E500AFAC5A /* Build configuration list for PBXAggregateTarget "Aggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E47EAFF12B3C07E500AFAC5A /* Debug */,
+				E47EAFF22B3C07E500AFAC5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6003F582195388D10070C39A /* Project object */;
+}
