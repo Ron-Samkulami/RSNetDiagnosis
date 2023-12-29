@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/RSNetDiagnosis.svg?style=flat)](https://cocoapods.org/pods/RSNetDiagnosis)
 [![Platform](https://img.shields.io/cocoapods/p/RSNetDiagnosis.svg?style=flat)](https://cocoapods.org/pods/RSNetDiagnosis)
 
+Network diagnosis framework for iOS, reference from [net-diagnosis](https://github.com/mediaios/net-diagnosis) and modify a lot to support IPv6.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
