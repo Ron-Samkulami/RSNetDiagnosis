@@ -169,6 +169,10 @@
 - (void)tcpPingWithHost:(NSString *)host 
                complete:(void(^)(NSString *detectLog))complete
 {
+    if (!complete) {
+        @throw [NSException exceptionWithName:NSInvalidArgumentException reason:@"No tcp ping complete handler" userInfo:nil];
+        return;
+    }
     [RSTCPPing start:host port:80 count:10 complete:^(NSMutableString *tcpPingRes, BOOL isDone) {
         if (isDone) {
             NSLog(@"%@", tcpPingRes);
