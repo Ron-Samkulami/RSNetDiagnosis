@@ -158,9 +158,11 @@
         return;
     }
     [[RSDomainLookup shareInstance] lookupDomain:host completeHandler:^(NSMutableArray<RSDomainLookUpResult *> * _Nullable lookupRes, NSError * _Nullable error) {
-        NSLog(@"%@", lookupRes.description);
+//        NSLog(@"%@", lookupRes.description);
         if (complete) {
-            complete(lookupRes.description);
+            dispatch_async(dispatch_get_main_queue(), ^{
+                complete(lookupRes.description);
+            });
         }
     }];
 }
@@ -175,9 +177,11 @@
     }
     [RSTCPPing start:host port:80 count:10 complete:^(NSMutableString *tcpPingRes, BOOL isDone) {
         if (isDone) {
-            NSLog(@"%@", tcpPingRes);
+//            NSLog(@"%@", tcpPingRes);
             if (complete) {
-                complete(tcpPingRes);
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    complete(tcpPingRes);
+                });
             }
         }
     }];
@@ -194,11 +198,13 @@
     __block NSMutableString *log = [[NSMutableString alloc] initWithString:@""];
     int packetCount = 10;
     [[RSPingService shareInstance] startPingHost:host packetCount:packetCount resultHandler:^(NSString * _Nullable pingres, BOOL isDone) {
-        NSLog(@"%@", pingres);
+//        NSLog(@"%@", pingres);
         [log appendFormat:@"%@\n",pingres];
         if (isDone) {
             if (complete) {
-                complete(log);
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    complete(log);
+                });
             }
         }
     }];
@@ -215,12 +221,14 @@
     __block NSMutableString *log = [[NSMutableString alloc] initWithString:@""];
     [[RSTraceRouteService shareInstance] startTracerouteHost:host resultHandler:^(NSString * _Nullable tracertRes, NSString * _Nullable destIp, BOOL isDone) {
         if (tracertRes) {
-            NSLog(@"%@\n",tracertRes);
+//            NSLog(@"%@\n",tracertRes);
             [log appendFormat:@"%@\n",tracertRes];
         }
         if (isDone) {
             if (complete) {
-                complete(log);
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    complete(log);
+                });
             }
         }
     }];
