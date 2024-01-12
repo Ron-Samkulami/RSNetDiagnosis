@@ -24,7 +24,7 @@ pod 'RSNetDiagnosis'
 
 ## Author
 
-Ron-Samkulami, huangxiongrong@37.com
+Ron-Samkulami
 
 ## License
 
