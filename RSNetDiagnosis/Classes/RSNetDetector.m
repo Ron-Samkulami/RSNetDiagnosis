@@ -7,14 +7,13 @@
 //
 
 #import "RSNetDetector.h"
-#import <CoreTelephony/CTCarrier.h>
-#import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import "RSDomainLookup.h"
 #import "RSPingService.h"
 #import "RSTraceRouteService.h"
 
 #import "RSTCPPing.h"
 #import "RSAsyncTaskQueue.h"
+#import <UIKit/UIKit.h>
 
 @implementation RSNetDetector
 
@@ -119,7 +118,7 @@
     if (hostList.count <= 0) {
         return;
     }
-    
+
     CFAbsoluteTime startTime = CFAbsoluteTimeGetCurrent();
     
     __block NSMutableString *log = [[NSMutableString alloc] initWithString:@""];
@@ -175,6 +174,7 @@
         @throw [NSException exceptionWithName:NSInvalidArgumentException reason:@"No tcp ping complete handler" userInfo:nil];
         return;
     }
+    
     [RSTCPPing start:host port:80 count:10 complete:^(NSMutableString *tcpPingRes, BOOL isDone) {
         if (isDone) {
 //            NSLog(@"%@", tcpPingRes);
@@ -237,6 +237,73 @@
 
 - (void)setLogLevel:(RSNetDiagnosisLogLevel)logLevel {
     [RSNetDiagnosisLog setLogLevel:logLevel];
+}
+
+#pragma mark - debug
+
+- (void)test
+{
+//    [self setLogLevel:RSNetDiagnosisLogLevel_DEBUG];
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"网络检测工具" message:nil preferredStyle:UIAlertControllerStyleAlert];
+    [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.placeholder = @"输入域名";
+        textField.text = [NSString stringWithFormat:@"www.37games.com"];
+    }];
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"Detect All" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        [self detectHostList:@[@"www.37games.com", @"www.supergamesky.com", @"www.superfastgame.com"/*,@"gpassport.superfastgame.com", @"geventsapi.superfastgame.com", @"gstore.superfastgame.com"*/] complete:^(NSString *detectLog) {
+            NSLog(@"%@",detectLog);
+            [[[UIAlertView alloc] initWithTitle:@"log" message:detectLog delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+        }];
+    }]];
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"Domain Lookup" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        NSString *host = [[alert.textFields[0].text componentsSeparatedByCharactersInSet:NSCharacterSet.whitespaceAndNewlineCharacterSet] componentsJoinedByString:@""];
+        [self dnsLookupWithHost:host complete:^(NSString * _Nonnull detectLog) {
+            NSLog(@"%@",detectLog);
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [[[UIAlertView alloc] initWithTitle:@"DNS Lookup" message:detectLog delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+            });
+        }];
+    }]];
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"TCP Ping" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        NSString *host = [[alert.textFields[0].text componentsSeparatedByCharactersInSet:NSCharacterSet.whitespaceAndNewlineCharacterSet] componentsJoinedByString:@""];
+        [self tcpPingWithHost:host complete:^(NSString * _Nonnull detectLog) {
+            NSLog(@"%@",detectLog);
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [[[UIAlertView alloc] initWithTitle:@"TCP Ping" message:detectLog delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+            });
+        }];
+    }]];
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"ICMP Ping" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        NSString *host = [[alert.textFields[0].text componentsSeparatedByCharactersInSet:NSCharacterSet.whitespaceAndNewlineCharacterSet] componentsJoinedByString:@""];
+        [self icmpPingWithHost:host complete:^(NSString * _Nonnull detectLog) {
+            NSLog(@"%@",detectLog);
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [[[UIAlertView alloc] initWithTitle:@"ICMP Ping" message:detectLog delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+            });
+        }];
+    }]];
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"ICMP Traceroute" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        NSString *host = [[alert.textFields[0].text componentsSeparatedByCharactersInSet:NSCharacterSet.whitespaceAndNewlineCharacterSet] componentsJoinedByString:@""];
+        [self icmpTracerouteWithHost:host complete:^(NSString * _Nonnull detectLog) {
+            NSLog(@"%@",detectLog);
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [[[UIAlertView alloc] initWithTitle:@"ICMP Traceroute" message:detectLog delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+            });
+        }];
+    }]];
+    
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil]];
+    
+    Class RVRootViewTool = NSClassFromString(@"RVRootViewTool");
+    id topVC = [RVRootViewTool performSelector:@selector(getTopViewController)];
+    [topVC presentViewController:alert animated:YES completion:nil];
 }
 
 @end
